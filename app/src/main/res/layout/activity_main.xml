@@ -4,18 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#6E84F1"
+    android:alpha="1"
+    android:background="@drawable/fondoj"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="281dp"
-        android:layout_height="536dp"
+        android:id="@+id/textView2"
+        android:layout_width="351dp"
+        android:layout_height="517dp"
+        android:alpha="0.5"
         android:background="@drawable/dise"
+        android:backgroundTint="#A5ACA6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32" />
+        app:layout_constraintVertical_bias="0.312" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationView"
@@ -28,7 +32,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.165"
         app:lottie_autoPlay="true"
-        app:lottie_loop="true"
+        app:lottie_loop="false"
         app:lottie_rawRes="@raw/hola" />
 
     <ImageView
@@ -48,7 +52,8 @@
         android:layout_width="213dp"
         android:layout_height="49dp"
         android:background="@drawable/dise"
-        android:drawableTint="#000000"
+        android:backgroundTint="#6BF8F4F4"
+        android:drawableTint="#FFFDFD"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -59,18 +64,19 @@
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="212dp"
-        android:layout_height="52dp"
+        android:layout_width="213dp"
+        android:layout_height="49dp"
         android:background="@drawable/dise"
+        android:backgroundTint="#6BF8F4F4"
         android:drawableTint="#000000"
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.531" />
+        app:layout_constraintVertical_bias="0.53" />
 
     <Button
         android:id="@+id/button"
@@ -85,30 +91,32 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.647" />
+        app:layout_constraintVertical_bias="0.704" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="31dp"
         android:layout_height="27dp"
+        android:tint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintHorizontal_bias="0.177"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.42"
+        app:layout_constraintVertical_bias="0.433"
         app:srcCompat="@drawable/usuario" />
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="31dp"
+        android:layout_height="27dp"
+        android:tint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintHorizontal_bias="0.177"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.53"
+        app:layout_constraintVertical_bias="0.529"
         app:srcCompat="@drawable/bloquear" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
